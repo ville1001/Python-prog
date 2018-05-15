@@ -1,0 +1,5 @@
+import random
+x=int(input())
+Y=int(input())
+num1=random.randrange(x,Y)
+print(num1)

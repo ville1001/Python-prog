@@ -1,0 +1,25 @@
+import random
+num = random.randrange(1, 50)
+y = 1
+x = 1
+
+def guessing():
+  global x
+  x=int(input())
+  my_func()
+
+def my_func():
+  global y
+  if x > num:
+    print("to large")
+    y = 1
+  elif x < num:
+      print("to small")
+      y = 1
+  else:
+        print("Nice.")
+        y = 2
+
+guessing()
+while y < 2:
+	guessing()
