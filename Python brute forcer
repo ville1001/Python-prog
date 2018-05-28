@@ -1,0 +1,12 @@
+import random
+import time
+
+target_array = list("Insert target here")
+string_array = [""] * len(target_array)
+i = 0
+while i < len(target_array):
+    string_array[i] = chr(random.randint(31, 126))
+    if string_array[i] == target_array[i]:
+        i += 1
+    print("".join(string_array))
+    time.sleep(0.06)
